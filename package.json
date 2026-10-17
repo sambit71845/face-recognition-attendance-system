@@ -1,0 +1,15 @@
+{
+  "name": "face-detection-app-root",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Face Recognition Attendance Management System",
+  "scripts": {
+    "dev": "bash run.sh",
+    "dev:all": "bash run.sh",
+    "dev:frontend": "cd frontend && pnpm dev",
+    "dev:backend": "cd backend && ./venv/bin/python main.py",
+    "install:frontend": "cd frontend && pnpm install",
+    "install:backend": "cd backend && (test -d venv || python3 -m venv venv) && ./venv/bin/pip install -r requirements.txt",
+    "install:all": "pnpm run install:frontend && pnpm run install:backend"
+  }
+}
